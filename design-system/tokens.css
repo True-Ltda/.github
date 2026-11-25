@@ -1,0 +1,253 @@
+/*
+  True Design System (TDS) — tokens v1.0
+  Fonte: brand kit True (artifact 9BAX5F, 23 nov 2026) e perfil yanghyperx.
+  Uso: <link rel="stylesheet" href="tokens.css"> e <html data-theme="dark|light">.
+  Regra: produtos novos importam este arquivo e NÃO criam cores fora dele,
+  exceto --accent (opcional, ver DESIGN-SYSTEM.md).
+*/
+
+:root {
+  /* ---------- Tema escuro (padrão) ---------- */
+  --bg: #000000;
+  --bg-1: #0a0a0a;          /* superfície, cards */
+  --bg-2: #141414;          /* hover, campos */
+  --line: #1f1f1f;          /* borda sutil */
+  --line-2: #323232;        /* borda de controle */
+  --fg: #ffffff;            /* título, texto principal */
+  --fg-1: #c4c4c4;          /* corpo (12:1 sobre #000) */
+  --fg-2: #808080;          /* metadados (5,3:1) */
+  --fg-3: #4d4d4d;          /* SÓ decorativo, nunca texto (2,5:1) */
+  --inv: #000000;           /* texto sobre fg */
+
+  /* Destaque segue o texto por padrão (branco no escuro, preto no claro) */
+  --accent: var(--fg);
+  --on-accent: var(--inv);
+
+  /* ---------- Ouro: exclusivo do que é pago (Premium/Pro) ---------- */
+  --gold: #f5c542;
+  --gold-2: #d49b12;
+  --gold-hi: #fff1b8;
+  --gold-deep: #a86f00;
+  --gold-ink: #f5c542;      /* texto ouro no escuro */
+  --on-gold: #1a1203;       /* texto sobre ouro (11,4:1) */
+  --gold-grad: linear-gradient(120deg, #fff1b8, #f5c542 45%, #d49b12);
+
+  /* ---------- Semânticas ---------- */
+  --ok: #4ade80;
+  --warn: #f59e0b;
+  --bad: #ef4444;
+  --bad-solid: #d33b3b;     /* fundo de ação destrutiva */
+  --on-bad: #ffffff;
+
+  /* ---------- Forma ---------- */
+  --radius-sm: 6px;         /* código, chips pequenos */
+  --radius: 14px;           /* cards, painéis */
+  --radius-lg: 18px;        /* containers de demo/app */
+  --radius-pill: 999px;     /* botões, pílulas, switch */
+  --radius-logo: 32%;       /* % do lado do símbolo */
+
+  /* ---------- Espaçamento (base 4) ---------- */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 20px;
+  --s-6: 24px;
+  --s-8: 32px;
+  --s-10: 40px;
+  --s-12: 48px;
+  --s-16: 64px;
+  --s-20: 80px;
+
+  /* ---------- Tipografia ---------- */
+  --font-sans: "Segoe UI Variable Text", "Segoe UI", Inter, system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Segoe UI Variable Display", "Segoe UI", Inter, system-ui, sans-serif;
+  --font-mono: "Cascadia Mono", "JetBrains Mono", ui-monospace, Consolas, monospace;
+
+  --fs-label: 11px;         /* eyebrow, caixa-alta, +0.18em */
+  --fs-meta: 12.5px;        /* metadados, apoio */
+  --fs-small: 13px;
+  --fs-body: 14px;          /* corpo de app */
+  --fs-body-lg: 15px;       /* corpo de site/leitura */
+  --fs-section: 17px;
+  --fs-title: 28px;
+  --fs-quote: 40px;
+  --fs-display: 64px;       /* um gesto grande por tela, no máximo */
+
+  --lh-tight: 1.1;
+  --lh-body: 1.6;
+
+  /* ---------- Movimento ---------- */
+  --ease: cubic-bezier(.2, .8, .2, 1);
+  --d-fast: .2s;            /* hover, toque */
+  --d-base: .35s;           /* estado, tema */
+  --d-slow: .55s;           /* entrada de item */
+  --stagger: 80ms;          /* atraso entre itens em cascata */
+  --rise: 14px;             /* distância da entrada */
+
+  /* ---------- Camadas ---------- */
+  --z-nav: 5;
+  --z-overlay: 20;
+  --z-toast: 30;
+  --blur: 14px;
+  --scrim: rgba(0, 0, 0, .55);
+
+  color-scheme: dark;
+}
+
+/* ---------- Tema claro ---------- */
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #ffffff;
+  --bg-1: #f7f7f7;
+  --bg-2: #ededed;
+  --line: #e6e6e6;
+  --line-2: #cdcdcd;
+  --fg: #000000;
+  --fg-1: #3b3b3b;          /* 11,2:1 */
+  --fg-2: #6b6b6b;          /* 5,3:1 (o #777 do kit reprovava: 4,48:1) */
+  --fg-3: #b4b4b4;          /* SÓ decorativo */
+  --inv: #ffffff;
+  --gold-ink: #9a6a00;      /* ouro como texto no claro (4,7:1) */
+  --ok: #15803d;
+  --warn: #b45309;
+  --bad: #c62828;
+}
+
+/* ---------- Temas extras (Premium) — mesmas chaves, só valores ---------- */
+:root[data-theme="graphite"] {
+  color-scheme: dark;
+  --bg: #17181b; --bg-1: #1d1f23; --bg-2: #25272c;
+  --line: #2b2d33; --line-2: #3a3d45;
+  --fg: #e9eaee; --fg-1: #b9bcc5; --fg-2: #80848f; --fg-3: #545862; --inv: #17181b;
+}
+:root[data-theme="midnight"] {
+  color-scheme: dark;
+  --bg: #070b1a; --bg-1: #0c1226; --bg-2: #131b36;
+  --line: #1a2340; --line-2: #2a3660;
+  --fg: #dfe6ff; --fg-1: #a9b5dc; --fg-2: #6f7ca6; --fg-3: #46507a; --inv: #070b1a;
+}
+:root[data-theme="sand"] {
+  color-scheme: light;
+  --bg: #f6f0e4; --bg-1: #efe7d7; --bg-2: #e8dec9;
+  --line: #e3d8c3; --line-2: #cfc1a5;
+  --fg: #2b2418; --fg-1: #4e4433; --fg-2: #6b5d44; --fg-3: #b3a68c; --inv: #f6f0e4;
+  --gold-ink: #9a6a00;
+}
+:root[data-theme="gold"] {
+  color-scheme: dark;
+  --bg: #0d0a03; --bg-1: #151007; --bg-2: #1f180a;
+  --line: #2a210c; --line-2: #3a2c0a;
+  --fg: #fbeec8; --fg-1: #d8c48f; --fg-2: #9c8a5a; --fg-3: #5f5233; --inv: #0d0a03;
+  --accent: var(--gold); --on-accent: var(--on-gold);
+}
+:root[data-theme="glass"] {
+  color-scheme: dark;
+  --bg: #12152a; --bg-1: rgba(255,255,255,.055); --bg-2: rgba(255,255,255,.10);
+  --line: rgba(255,255,255,.09); --line-2: rgba(255,255,255,.18);
+  --fg: #f4f6ff; --fg-1: #c9cde2; --fg-2: #9096b4; --fg-3: #5f6584; --inv: #0b0d18;
+  --accent: #9ab8ff; --on-accent: #0b0d18;
+}
+
+/* ---------- Base ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 15px/var(--lh-body) var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Foco visível obrigatório (o app da True ainda não tinha isso: ver auditoria) */
+:focus-visible {
+  outline: 2px solid var(--fg);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+/* Movimento reduzido: respeita o Windows e o próprio app */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
+
+/* ---------- Componentes base (CSS mínimo, opcional) ---------- */
+.tds-eyebrow {
+  font-size: var(--fs-label);
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--fg-2);
+  font-weight: 500;
+}
+.tds-btn {
+  height: 38px;
+  padding: 0 18px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--line-2);
+  background: none;
+  color: var(--fg);
+  font: 500 13px var(--font-sans);
+  cursor: pointer;
+  transition: background var(--d-fast) var(--ease), border-color var(--d-fast) var(--ease), transform var(--d-fast) var(--ease);
+}
+.tds-btn:hover { background: var(--bg-2); border-color: var(--fg-3); }
+.tds-btn:active { transform: scale(.97); }
+.tds-btn--primary { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
+.tds-btn--primary:hover { opacity: .86; background: var(--accent); }
+.tds-btn--ghost { border-color: transparent; color: var(--fg-2); }
+.tds-btn--premium { background: var(--gold-grad); color: var(--on-gold); border-color: transparent; }
+.tds-btn--danger { background: var(--bad-solid); color: var(--on-bad); border-color: var(--bad-solid); }
+
+.tds-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg-1);
+  padding: var(--s-5);
+  min-width: 0;
+}
+
+.tds-pill-premium {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 24px;
+  padding: 0 10px;
+  border-radius: var(--radius-pill);
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--gold-ink);
+  border: 1px solid color-mix(in srgb, var(--gold) 60%, transparent);
+  background: linear-gradient(120deg, color-mix(in srgb, var(--gold) 16%, transparent), color-mix(in srgb, var(--gold) 4%, transparent));
+}
+
+.tds-progress {
+  position: relative;
+  height: 3px;
+  border-radius: 3px;
+  background: var(--line-2);
+  overflow: hidden;
+}
+.tds-progress > i {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: var(--p, 0%);
+  background: var(--accent);
+  border-radius: 3px;
+  transition: width var(--d-base) var(--ease);
+}
+
+.tds-toast {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 10px 10px 18px;
+  border-radius: var(--radius-pill);
+  background: var(--fg);
+  color: var(--inv);
+  font-size: 13px;
+  font-weight: 500;
+}
