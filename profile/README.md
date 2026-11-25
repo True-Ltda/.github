@@ -27,9 +27,7 @@
 <h3 align="center">QUEM SOMOS</h3>
 
 <p align="center">
-  A <b>True Ltda</b> faz apps para Windows 10 e 11 que mostram a verdade sobre o seu computador.<br/>
-  Nosso símbolo é o kanji <b>真</b> (<i>shin</i>), que significa "verdadeiro".<br/>
-  Preto e branco na interface, ouro só no que é Premium, e nenhuma surpresa para quem usa.
+  A <b>True Ltda</b> faz apps para Windows 10 e 11 que mostram a verdade sobre o seu computador.
 </p>
 
 <p align="center"><img src="https://raw.githubusercontent.com/True-Ltda/true-download-releases/main/assets/divider.svg" alt="" width="100%" /></p>
@@ -66,41 +64,10 @@
 
 <p align="center"><img src="https://raw.githubusercontent.com/True-Ltda/true-download-releases/main/assets/divider.svg" alt="" width="100%" /></p>
 
-<h3 align="center">COMO CONSTRUÍMOS</h3>
-
-<table align="center">
-  <tr>
-    <td align="center" width="25%"><b>真</b><br/><sub>VERDADEIRO</sub><br/><sub>A tela mostra o estado real, sem números enfeitados.</sub></td>
-    <td align="center" width="25%"><b>◐</b><br/><sub>PRETO E BRANCO</sub><br/><sub>Cor é exceção e sempre carrega significado.</sub></td>
-    <td align="center" width="25%"><b>◆</b><br/><sub>OURO É PREMIUM</sub><br/><sub>Dourado marca só o que é pago, em todo produto.</sub></td>
-    <td align="center" width="25%"><b>↺</b><br/><sub>VOCÊ NO CONTROLE</sub><br/><sub>Foco visível, Desfazer e movimento reduzido.</sub></td>
-  </tr>
-</table>
-
-<p align="center">
-  Todos os produtos seguem o <a href="https://github.com/True-Ltda/.github/blob/main/design-system/DESIGN-SYSTEM.md"><b>True Design System</b></a>:<br/>
-  <code>tokens.css</code> com cores, tipografia Segoe UI Variable, a curva <code>cubic-bezier(.2, .8, .2, 1)</code> e 7 temas prontos.
-</p>
-
-<p align="center">
-  <img alt="bg" src="https://img.shields.io/badge/%23000000-bg-000000?style=flat-square&labelColor=000000" />
-  <img alt="surface" src="https://img.shields.io/badge/%230a0a0a-surface-0a0a0a?style=flat-square&labelColor=0a0a0a" />
-  <img alt="line" src="https://img.shields.io/badge/%23323232-line-323232?style=flat-square&labelColor=141414" />
-  <img alt="meta" src="https://img.shields.io/badge/%23808080-meta-808080?style=flat-square&labelColor=141414" />
-  <img alt="fg" src="https://img.shields.io/badge/%23ffffff-text-ffffff?style=flat-square&labelColor=141414" />
-  <img alt="gold" src="https://img.shields.io/badge/%23f5c542-premium-f5c542?style=flat-square&labelColor=1a1203" />
-</p>
-
-<p align="center"><img src="https://raw.githubusercontent.com/True-Ltda/true-download-releases/main/assets/divider.svg" alt="" width="100%" /></p>
-
 <h3 align="center">TECNOLOGIAS</h3>
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=rust,tauri,js,html,css,supabase,githubactions,git&perline=8" alt="Rust, Tauri, JavaScript, HTML, CSS, Supabase, GitHub Actions e Git" />
-</p>
-
-<p align="center">
-  <sub>Apps nativos com Rust + Tauri 2 · Atualizações assinadas · Licenças Ed25519 · Backend Supabase</sub>
 </p>
 
 <p align="center"><img src="https://raw.githubusercontent.com/True-Ltda/true-download-releases/main/assets/divider.svg" alt="" width="100%" /></p>
