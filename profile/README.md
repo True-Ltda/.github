@@ -19,7 +19,6 @@
 <p align="center">
   <a href="https://github.com/True-Ltda/true-download-releases/releases/latest"><img alt="Baixar o True Download" src="https://img.shields.io/badge/BAIXAR%20O%20TRUE-FFFFFF?style=for-the-badge&logo=windows&logoColor=black" /></a>
   <a href="https://github.com/True-Ltda"><img alt="Ver os projetos" src="https://img.shields.io/badge/VER%20OS%20PROJETOS-000000?style=for-the-badge&logo=github&logoColor=white" /></a>
-  <a href="https://github.com/True-Ltda/.github/blob/main/design-system/DESIGN-SYSTEM.md"><img alt="Design system" src="https://img.shields.io/badge/DESIGN%20SYSTEM-1a1a1a?style=for-the-badge&logo=css&logoColor=white" /></a>
 </p>
 
 <p align="center"><img src="https://raw.githubusercontent.com/True-Ltda/true-download-releases/main/assets/divider.svg" alt="" width="100%" /></p>
